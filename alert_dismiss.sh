@@ -65,8 +65,8 @@ alert_payload="{\"alerts\":[],\"dismissalNote\":\"${dismiss_note}\",\"filter\":{
 
 
 curl --request POST \
- --url "${pcee_console_api_url}/alert/dismiss" \
- --header 'Accept: application/json, text/plain, */*' \
- --header "x-redlock-auth: ${pcee_auth_token}" \
- --header 'Content-Type: application/json' \
- --data "${alert_payload}" \
+     --url "${pcee_console_api_url}/alert/dismiss" \
+     --header 'Accept: application/json, text/plain, */*' \
+     --header "x-redlock-auth: ${pcee_auth_token}" \
+     --header 'Content-Type: application/json' \
+     --data "${alert_payload}"
